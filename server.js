@@ -2,14 +2,15 @@ const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 const cors = require('cors');
+require('dotenv').config();
 const BASE_URL = process.env.BASE_URL;
+console.log(BASE_URL);
 const corsOptions ={
-  origin:'http://localhost:3000', 
+  origin:`${BASE_URL}`, 
   credentials:true,            //access-control-allow-credentials:true
   optionSuccessStatus:200
 }
 app.use(cors(corsOptions));
-require('dotenv').config();
 app.use(express.json());
 app.use(express.static('public/build'));
 const contactUsRouter = require("./Routes/contactUsRouter");

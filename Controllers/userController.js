@@ -6,7 +6,11 @@ app.use(cookieParser());
 const bcrypt = require("bcrypt");
 const jwt = require('jsonwebtoken');
 const { MailSender } = require("../utility/nodemailer");
+require('dotenv').config();
+
 const jwt_key = process.env.JWT_KEY;
+const BASE_URL = process.env.BASE_URL;
+// console.log(jwt_key);
 async function comparePassword(plaintextPassword, hash) {
   const result = await bcrypt.compare(plaintextPassword, hash);
   return result;
@@ -19,7 +23,7 @@ exports.forgotPassword = async (req, res, next) => {
     console.log(user);
     if (user) {
       let id = user._id;
-      let resetPassswordLink = `http://localhost:3000/resetPassword/${id}`;
+      let resetPassswordLink = `${BASE_URL}/resetPassword/${id}`;
       console.log(resetPassswordLink);
       let myObj = {
         name: user.name,
