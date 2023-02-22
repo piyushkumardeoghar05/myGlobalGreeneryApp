@@ -1,0 +1,10 @@
+const express = require("express");
+const { mongo, default: mongoose } = require("mongoose");
+const app = express();
+app.use(express.json());
+const router = express.Router();
+const topThreeCardsController = require("../Controllers/topThreeCardsController");
+const topThreeCardsModel = require("../Models/topThreeCardsModel");
+router.route('/').post( topThreeCardsController.postTopThreeCards);
+router.route("/get").get( topThreeCardsController.getTopThreeCards);
+module.exports = router;

@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d811a55a.css",
+    "main.js": "/static/js/main.ca5d65dc.js",
+    "static/media/flower2.jpg": "/static/media/flower2.a2d455d3238cf9afe8ae.jpg",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/flower.jpg": "/static/media/flower.641baee918d54013fe3c.jpg",
+    "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/index.html",
+    "main.d811a55a.css.map": "/static/css/main.d811a55a.css.map",
+    "main.ca5d65dc.js.map": "/static/js/main.ca5d65dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d811a55a.css",
+    "static/js/main.ca5d65dc.js"
+  ]
+}
