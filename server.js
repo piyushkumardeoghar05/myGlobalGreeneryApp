@@ -12,7 +12,7 @@ const corsOptions ={
 }
 app.use(cors(corsOptions));
 app.use(express.json());
-app.use(express.static('public/build'));
+// app.use(express.static('public/build'));
 const contactUsRouter = require("./Routes/contactUsRouter");
 const topThreeCardsRouter = require("./Routes/topThreeCardsRouter");
 const ourTeamRouter = require("./Routes/ourTeamRouter");
