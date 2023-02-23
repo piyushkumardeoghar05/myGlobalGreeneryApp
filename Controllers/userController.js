@@ -78,7 +78,8 @@ exports.login = async (req, res, next) => {
         let uid = user._id;
         let jwt_sign = jwt.sign({payload:uid},jwt_key) 
         // res.setHeader('Set-Cookie', 'isLoggedin=true');
-        res.setHeader("Set-Cookie", `isLoggedin=${jwt_sign}; HttpOnly`);
+//         res.setHeader("Set-Cookie", `isLoggedin=${jwt_sign}; HttpOnly`);
+        res.setHeader("Set-Cookie", `isLoggedin=${jwt_sign}; Secure; HttpOnly; SameSite=None`);
         if (user.role == "admin" || user.role == "superadmin") {
           res.setHeader("Set-Cookie", `isAdmin=${jwt_sign}; HttpOnly`);
         }
